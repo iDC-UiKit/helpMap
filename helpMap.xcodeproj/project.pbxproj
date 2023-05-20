@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65E66CDE82051862FE867E51 /* Pods_helpMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D330E8CA87B8E72B149C5D /* Pods_helpMap.framework */; };
 		6EBFCAD92A0F829300CD06F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBFCAD82A0F829300CD06F9 /* AppDelegate.swift */; };
 		6EBFCADB2A0F829300CD06F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBFCADA2A0F829300CD06F9 /* SceneDelegate.swift */; };
 		6EBFCADD2A0F829300CD06F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBFCADC2A0F829300CD06F9 /* LoginViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		221FBA188EE32DD19EDDBB50 /* Pods-helpMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpMap.debug.xcconfig"; path = "Target Support Files/Pods-helpMap/Pods-helpMap.debug.xcconfig"; sourceTree = "<group>"; };
 		6EBFCAD52A0F829300CD06F9 /* helpMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBFCAD82A0F829300CD06F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EBFCADA2A0F829300CD06F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		6EBFCAEC2A0F830400CD06F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6EBFCAEE2A0F832900CD06F9 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		6EBFCAF02A0F836000CD06F9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		79D330E8CA87B8E72B149C5D /* Pods_helpMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helpMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12C117C8050F26A8AB6E328 /* Pods-helpMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpMap.release.xcconfig"; path = "Target Support Files/Pods-helpMap/Pods-helpMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E66CDE82051862FE867E51 /* Pods_helpMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51F3448B9B923EDAE3149456 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79D330E8CA87B8E72B149C5D /* Pods_helpMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6EBFCACC2A0F829300CD06F9 = {
 			isa = PBXGroup;
 			children = (
 				6EBFCAD72A0F829300CD06F9 /* helpMap */,
 				6EBFCAD62A0F829300CD06F9 /* Products */,
+				CD840D619F021564E492DB6E /* Pods */,
+				51F3448B9B923EDAE3149456 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +112,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		CD840D619F021564E492DB6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				221FBA188EE32DD19EDDBB50 /* Pods-helpMap.debug.xcconfig */,
+				E12C117C8050F26A8AB6E328 /* Pods-helpMap.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EBFCAE92A0F829400CD06F9 /* Build configuration list for PBXNativeTarget "helpMap" */;
 			buildPhases = (
+				D3E682759967F3669418FCBC /* [CP] Check Pods Manifest.lock */,
 				6EBFCAD12A0F829300CD06F9 /* Sources */,
 				6EBFCAD22A0F829300CD06F9 /* Frameworks */,
 				6EBFCAD32A0F829300CD06F9 /* Resources */,
+				F9F820834172A6BB8CA7DF8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +188,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3E682759967F3669418FCBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-helpMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F820834172A6BB8CA7DF8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helpMap/Pods-helpMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helpMap/Pods-helpMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helpMap/Pods-helpMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EBFCAD12A0F829300CD06F9 /* Sources */ = {
@@ -306,6 +375,7 @@
 		};
 		6EBFCAEA2A0F829400CD06F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221FBA188EE32DD19EDDBB50 /* Pods-helpMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +406,7 @@
 		};
 		6EBFCAEB2A0F829400CD06F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12C117C8050F26A8AB6E328 /* Pods-helpMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
