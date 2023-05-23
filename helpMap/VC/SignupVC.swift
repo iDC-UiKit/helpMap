@@ -142,7 +142,7 @@ class SignupVC: UIViewController {
     }
     func setupAddTarget() {
         signupButton.addTarget(self, action: #selector(signupButtonTapped), for: .touchUpInside)
-        popNavigateButton.addTarget(self, action: #selector(popNavigate), for: .touchUpInside)
+        popNavigateButton.addTarget(self, action: #selector(popNavigate ), for: .touchUpInside)
     }
     
     @objc func signupButtonTapped() {
