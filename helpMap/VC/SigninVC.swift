@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  helpMap
-//
-//  Created by 김찬교 on 2023/05/13.
-//
-
 import UIKit
 
 class SigninVC: UIViewController {
