@@ -88,7 +88,7 @@ class SigninVC: UIViewController {
     // 로그인 버튼 누르면 동작하는 함수
     @objc func loginButtonTapped() {
         // 서버랑 통신해서, 다음 화면으로 넘어가는 내용 구현
-        print("다음 화면으로 넘어가기")
+        navigationController?.pushViewController(HomeVC, animated: true)
         
     }
     @objc func signupButtonTapped() {
